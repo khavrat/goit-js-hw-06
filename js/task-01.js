@@ -2,13 +2,13 @@ const listCategoriesRef = document.querySelector('#categories');
 const categoriesRef = document.querySelectorAll('.item');
 
 
-function countCategoriesItems() {
+function countListCategoriesItems() {
   const amountItems = listCategoriesRef.children.length;
   console.log(`Number of categories: ${amountItems}`);
 }
 
 
-function countCategoryItem() {
+function countCategoryItems() {
   categoriesRef.forEach((category) => {
     const title = category.firstElementChild.textContent;
     console.log(`Category: ${title}`);
@@ -18,5 +18,5 @@ function countCategoryItem() {
 }
 
 
-countCategoriesItems();
-countCategoryItem();
+countListCategoriesItems();
+countCategoryItems();
